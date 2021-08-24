@@ -61,7 +61,7 @@ public class ConsoleRunner implements CommandLineRunner {
         FryingPan fryingPan_3 = new FryingPan("Rondell", material_3,chef_3);
         fryingPanService.save(fryingPan_3);
 
-        //ПОИСК СКОВОРОДЫ ПО МАТЕРИАЛУ
+        //ПОИСК СКОВОРОДЫ ПО МАТЕРИАЛАМ
         fryingPanService.findByMaterial(material_3).forEach(System.out::println);
 
         //ПОИСК СКОВОРОДЫ ПО ПОВАРУ
